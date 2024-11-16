@@ -186,11 +186,17 @@ header nav a:hover {
 /* Skills Filter */
 .skills-filter {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap; 
+  gap: 0.5rem;
+  justify-content: center; 
   margin-bottom: 1rem;
 }
 
+/* Filter Buttons */
 .filter-btn {
+  flex: 1 1 auto; 
+  max-width: 150px; 
+  text-align: center;
   padding: 0.5rem 1rem;
   background-color: #f4f4f4;
   border: 1px solid #ddd;
@@ -209,6 +215,16 @@ header nav a:hover {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .filter-btn {
+    flex: 1 1 100%; 
+    max-width: none;
+  }
+
+  .skills-filter {
+    gap: 0.3rem; 
+  }
+}
 /* Footer */
 footer {
   text-align: center;
