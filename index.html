@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -28,15 +30,16 @@
     <h2>About Me</h2>
     <div class="scrollable-content">
       <p>
-        I am a final-year Practical Software Engineering student with a strong foundation in front-end and back-end technologies. I am passionate about creating impactful software solutions.
+        I am a graduate in Practical Software Engineering with a strong foundation in front-end and back-end
+        technologies. I am passionate about creating impactful software solutions and continuously advancing my skills.
       </p>
       <p>
-        My academic journey includes participation in an exclusive student program, where I developed advanced technical proficiencies and soft skills.
+        My academic journey includes participation in an exclusive student program, where I developed advanced technical
+        proficiencies and soft skills.
       </p>
     </div>
   </section>
 
- 
   <section id="work-experience" class="card">
     <h2>Work Experience</h2>
     <div class="scrollable-content">
@@ -59,9 +62,11 @@
     <h2>Magen Adam Project</h2>
     <div class="scrollable-content">
       <p>
-        <strong>"Magen Adam"</strong> (a wordplay in Hebrew combining מגן and אדם/דם) is a cross-engineering project focused on autonomic arterial occlusion.
+        <strong>"Magen Adam"</strong> (a wordplay in Hebrew combining מגן and אדם/דם) is a cross-engineering project
+        focused on autonomic arterial occlusion.
       </p>
-      <p>This innovative project was developed as part of an exclusive student program and involved the following steps:</p>
+      <p>This innovative project was developed as part of an exclusive student program and involved the following steps:
+      </p>
       <ul>
         <li>Brainstorming innovative ideas</li>
         <li>Decision-making on project direction</li>
@@ -75,6 +80,7 @@
       </p>
     </div>
   </section>
+
   <section id="projects" class="card">
     <h2>My Projects</h2>
     <div class="carousel">
@@ -82,17 +88,20 @@
         <div class="carousel-item">
           <h3>Library Management App</h3>
           <p>A React-based app for managing library operations.</p>
-          <a href="https://github.com/jakob12343/MyFirstReact_Project" target="_blank" aria-label="Library Management App">View on GitHub</a>
+          <a href="https://github.com/jakob12343/MyFirstReact_Project" target="_blank"
+            aria-label="Library Management App">View on GitHub</a>
         </div>
         <div class="carousel-item">
           <h3>Final Project</h3>
           <p>A dynamic React project showcasing advanced skills.</p>
-          <a href="https://github.com/jakob12343/FinalProject" target="_blank" aria-label="Final Project">View on GitHub</a>
+          <a href="https://github.com/jakob12343/FinalProject" target="_blank" aria-label="Final Project">View on
+            GitHub</a>
         </div>
         <div class="carousel-item">
           <h3>Dynamic Form Generator</h3>
           <p>A React app that dynamically generates forms based on JSON configurations.</p>
-          <a href="https://github.com/jakob12343/dynamic-form-generator" target="_blank" aria-label="Dynamic Form Generator">View on GitHub</a>
+          <a href="https://github.com/jakob12343/dynamic-form-generator" target="_blank"
+            aria-label="Dynamic Form Generator">View on GitHub</a>
         </div>
       </div>
       <button class="carousel-button left" aria-label="Previous Slide">❮</button>
@@ -102,20 +111,32 @@
 
   <section id="skills" class="card">
     <h2>Technical Skills</h2>
+    <div class="skills-filter">
+      <button data-filter="all" class="filter-btn active">All</button>
+      <button data-filter="front-end" class="filter-btn">Front-End</button>
+      <button data-filter="back-end" class="filter-btn">Back-End</button>
+      <button data-filter="database" class="filter-btn">Database</button>
+      <button data-filter="tools" class="filter-btn">Tools</button>
+      <button data-filter="languages" class="filter-btn">Languages</button>
+    </div>
     <ul class="skills-list">
-      <li>React</li>
-      <li>Node.js</li>
-      <li>MongoDB</li>
-      <li>SQL</li>
-      <li>JavaScript</li>
-      <li>C#, C++</li>
-      <li>CSS, HTML</li>
-      <li>Linux</li>
-    </ul>
-    <h2>Languages</h2>
-    <ul>
-      <li>English</li>
-      <li>Hebrew</li>
+      <li class="skill-item front-end hidden">React</li>
+      <li class="skill-item front-end hidden">JavaScript</li>
+      <li class="skill-item front-end hidden">HTML</li>
+      <li class="skill-item front-end hidden">CSS</li>
+      <li class="skill-item back-end hidden">Node.js</li>
+      <li class="skill-item back-end hidden">C#</li>
+      <li class="skill-item back-end hidden">C++</li>
+      <li class="skill-item database hidden">MongoDB</li>
+      <li class="skill-item database hidden">SQL</li>
+      <li class="skill-item tools hidden">Linux</li>
+      <li class="skill-item tools hidden">Redux</li>
+      <li class="skill-item tools hidden">Web APIs</li>
+      <li class="skill-item tools hidden">Tailwind CSS</li>
+      <li class="skill-item tools hidden">Material-UI</li>
+      <li class="skill-item tools hidden">Git</li>
+      <li class="skill-item languages hidden">Hebrew</li>
+      <li class="skill-item languages hidden">English</li>
     </ul>
   </section>
 
@@ -133,4 +154,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

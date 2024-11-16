@@ -149,7 +149,9 @@
     gap: 1rem;
     padding: 1rem 0;
   }
-  
+  .skill-item.hidden {
+    display: none;
+  }
   .skills-list li {
     background: #ecf0f1;
     padding: 0.5rem;
@@ -157,7 +159,47 @@
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  .skills-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
   
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-btn.active {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .filter-btn:hover {
+    background-color: #2980b9;
+    color: #fff;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .skill-item {
+    padding: 0.5rem 1rem;
+    background-color: #ecf0f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .skill-item.hidden {
+    display: none;
+  }
   /* Footer */
   footer {
     text-align: center;
@@ -190,8 +232,28 @@
       transform: translateY(0);
     }
   }
-  
-  /* Scrollable Section Indicator */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-item {
+  display: none; 
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item.visible {
+  display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
   .scrollable-content::before {
     content: '⇅ Scroll';
     position: absolute;
